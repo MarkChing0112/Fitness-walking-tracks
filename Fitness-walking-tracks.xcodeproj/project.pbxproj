@@ -14,6 +14,15 @@
 		0FBCE4CB299F27FC001F6001 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4CA299F27FC001F6001 /* Persistence.swift */; };
 		0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */; };
 		0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */; };
+		0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DB299F3025001F6001 /* SignUpView.swift */; };
+		0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DD299F306A001F6001 /* SignUpModel.swift */; };
+		0FBCE4E0299F316E001F6001 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */; };
+		0FBCE4E3299F3256001F6001 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E2299F3256001F6001 /* FirebaseAuth */; };
+		0FBCE4E5299F3256001F6001 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E4299F3256001F6001 /* FirebaseDatabase */; };
+		0FBCE4E7299F3256001F6001 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E6299F3256001F6001 /* FirebaseDatabaseSwift */; };
+		0FBCE4E9299F3256001F6001 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E8299F3256001F6001 /* FirebaseFirestore */; };
+		0FBCE4EB299F3256001F6001 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EA299F3256001F6001 /* FirebaseFirestoreSwift */; };
+		0FBCE4ED299F3256001F6001 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EC299F3256001F6001 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +34,9 @@
 		0FBCE4CA299F27FC001F6001 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0FBCE4CD299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fitness_walking_tracks.xcdatamodel; sourceTree = "<group>"; };
 		0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = facility.xcdatamodel; sourceTree = "<group>"; };
+		0FBCE4DB299F3025001F6001 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		0FBCE4DD299F306A001F6001 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/SignUp/SignUpModel.swift"; sourceTree = "<group>"; };
+		0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBCE4EB299F3256001F6001 /* FirebaseFirestoreSwift in Frameworks */,
+				0FBCE4E7299F3256001F6001 /* FirebaseDatabaseSwift in Frameworks */,
+				0FBCE4E9299F3256001F6001 /* FirebaseFirestore in Frameworks */,
+				0FBCE4E5299F3256001F6001 /* FirebaseDatabase in Frameworks */,
+				0FBCE4E3299F3256001F6001 /* FirebaseAuth in Frameworks */,
+				0FBCE4ED299F3256001F6001 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,10 +75,12 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
+				0FBCE4D8299F2FD5001F6001 /* Signup-System */,
 				0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */,
 				0FBCE4C3299F27FB001F6001 /* ContentView.swift */,
 				0FBCE4C5299F27FC001F6001 /* Assets.xcassets */,
 				0FBCE4CA299F27FC001F6001 /* Persistence.swift */,
+				0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */,
 				0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */,
 				0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */,
 				0FBCE4C7299F27FC001F6001 /* Preview Content */,
@@ -74,6 +94,15 @@
 				0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FBCE4D8299F2FD5001F6001 /* Signup-System */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCE4DD299F306A001F6001 /* SignUpModel.swift */,
+				0FBCE4DB299F3025001F6001 /* SignUpView.swift */,
+			);
+			name = "Signup-System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +121,14 @@
 			dependencies = (
 			);
 			name = "Fitness-walking-tracks";
+			packageProductDependencies = (
+				0FBCE4E2299F3256001F6001 /* FirebaseAuth */,
+				0FBCE4E4299F3256001F6001 /* FirebaseDatabase */,
+				0FBCE4E6299F3256001F6001 /* FirebaseDatabaseSwift */,
+				0FBCE4E8299F3256001F6001 /* FirebaseFirestore */,
+				0FBCE4EA299F3256001F6001 /* FirebaseFirestoreSwift */,
+				0FBCE4EC299F3256001F6001 /* FirebaseStorage */,
+			);
 			productName = "Fitness-walking-tracks";
 			productReference = 0FBCE4BE299F27FB001F6001 /* Fitness-walking-tracks.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 0FBCE4B5299F27FB001F6001;
+			packageReferences = (
+				0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 0FBCE4BF299F27FB001F6001 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -136,6 +176,7 @@
 			files = (
 				0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */,
 				0FBCE4C6299F27FC001F6001 /* Assets.xcassets in Resources */,
+				0FBCE4E0299F316E001F6001 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBCE4CB299F27FC001F6001 /* Persistence.swift in Sources */,
+				0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */,
 				0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */,
 				0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */,
 				0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */,
+				0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */,
 				0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness-walking-tracks/Preview Content\"";
-				DEVELOPMENT_TEAM = B5MK75C8B9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -308,7 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Fitness-walking-tracks/Preview Content\"";
-				DEVELOPMENT_TEAM = B5MK75C8B9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -351,6 +394,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0FBCE4E2299F3256001F6001 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0FBCE4E4299F3256001F6001 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		0FBCE4E6299F3256001F6001 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		0FBCE4E8299F3256001F6001 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		0FBCE4EA299F3256001F6001 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		0FBCE4EC299F3256001F6001 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0FBCE4E1299F3256001F6001 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */ = {
