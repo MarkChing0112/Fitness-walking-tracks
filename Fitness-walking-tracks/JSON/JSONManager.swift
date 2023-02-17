@@ -13,7 +13,7 @@ struct FacilityElement: Codable {
     let districtTc, districtSc, routeEn, routeTc: String
     let routeSc, howToAccessEn, howToAccessTc, howToAccessSc: String
     let mapURLEn, mapURLTc, mapURLSc: String
-    let latitude: Latitude
+    let latitude: Double
     let longitude: Double
 
     enum CodingKeys: String, CodingKey {

@@ -10,14 +10,14 @@ import Firebase
 struct SignUpView: View {
  
         @StateObject var signUpModel: SignUpModel = SignUpModel()
-        //@StateObject var loginModel: LoginModel = LoginModel()
+        @StateObject var loginModel: LoginModel = LoginModel()
         
         // Log Status
         @AppStorage("log_status") var logStatus: Bool = false
         
         // FaceID Properties
         @State var useFaceID: Bool = false
-        
+        @State private var toSignInView = false
         @State var maxCircleHeight: CGFloat = 0
         
         var body: some View {
@@ -97,8 +97,13 @@ struct SignUpView: View {
                 }.disabled(signUpModel.email == "" || signUpModel.password == "" )
                 .padding(.vertical, 35)
                 .alert(signUpModel.errorMsg, isPresented: $signUpModel.showError){
-                    
-                }
+                    Button("ok!") {
+                                            toSignInView = true
+                                        }
+                                    }
+                                    NavigationLink(isActive: $toSignInView, destination: { SignInView() }, label: {
+                                        EmptyView()
+                                    })
         }
             .padding(.top,-maxCircleHeight / 1.5)
             .frame(maxHeight: .infinity, alignment:  .top)

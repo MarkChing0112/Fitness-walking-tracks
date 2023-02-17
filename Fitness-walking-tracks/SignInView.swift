@@ -58,13 +58,14 @@ struct SignInView: View {
             
     
             
-            Text("Hey, \nLogin Now")
+            Text("Hey\n")
                 .font(.largeTitle.bold())
                 .foregroundColor(.black)
-           
-            
                 .hLeading()
-            
+            Text("Login Now")
+                .font(.largeTitle.bold())
+                .foregroundColor(.black)
+                .hLeading()
             TextField("Email", text: $loginModel.email)
                 .padding()
                 .background {
@@ -160,10 +161,8 @@ struct SignInView: View {
             .padding(.vertical, 35)
             .disabled(loginModel.email == "" || loginModel.password == "")
             .opacity(loginModel.email == "" || loginModel.password == "" ? 0.5 : 1)
-            
             NavigationLink {
                 SignUpView()
-                
             } label: {
                 Text("create account")
                     .foregroundColor(.gray)
@@ -187,29 +186,15 @@ struct SignInView: View {
                     .frame(width: 90, height: 90)
                     .offset(x:-20, y: 90)
                    
-                
-                
                 Spacer(minLength: 0)
-                
                 Circle()
                     .fill(Color("IconYellow"))
                     .frame(width: 150, height: 150)
                     .offset(x:40, y: 20)
-                  
-                
-                
             }
-            
-          
-            
-            
             ,alignment: .bottom
-  
-        
         )
-        
     }
-    
     }
     
 
@@ -234,12 +219,7 @@ struct Login_Previews: PreviewProvider {
 extension View{
     func getRect()->CGRect{
         return UIScreen.main.bounds
-        
-
     }
-    
-
-    
     func hLeading()-> some View{
         self.frame(maxWidth: .infinity, alignment: .leading)
     }
