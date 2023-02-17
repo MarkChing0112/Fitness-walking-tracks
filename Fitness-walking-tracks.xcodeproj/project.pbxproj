@@ -11,8 +11,6 @@
 		0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C3299F27FB001F6001 /* ContentView.swift */; };
 		0FBCE4C6299F27FC001F6001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C5299F27FC001F6001 /* Assets.xcassets */; };
 		0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */; };
-		0FBCE4CB299F27FC001F6001 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4CA299F27FC001F6001 /* Persistence.swift */; };
-		0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */; };
 		0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */; };
 		0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DB299F3025001F6001 /* SignUpView.swift */; };
 		0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DD299F306A001F6001 /* SignUpModel.swift */; };
@@ -25,6 +23,8 @@
 		0FBCE4ED299F3256001F6001 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EC299F3256001F6001 /* FirebaseStorage */; };
 		0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4EF299F3586001F6001 /* SignInView.swift */; };
 		0FBCE4F2299F35D0001F6001 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F1299F35D0001F6001 /* LoginModel.swift */; };
+		0FBCE4F4299F580D001F6001 /* facility-fw.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F3299F580D001F6001 /* facility-fw.json */; };
+		0FBCE4F8299F5BB9001F6001 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,14 +33,15 @@
 		0FBCE4C3299F27FB001F6001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FBCE4C5299F27FC001F6001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0FBCE4CA299F27FC001F6001 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		0FBCE4CD299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fitness_walking_tracks.xcdatamodel; sourceTree = "<group>"; };
 		0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = facility.xcdatamodel; sourceTree = "<group>"; };
 		0FBCE4DB299F3025001F6001 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0FBCE4DD299F306A001F6001 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/SignUp/SignUpModel.swift"; sourceTree = "<group>"; };
 		0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FBCE4EF299F3586001F6001 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0FBCE4F1299F35D0001F6001 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/login/LoginModel.swift"; sourceTree = "<group>"; };
+		0FBCE4F3299F580D001F6001 /* facility-fw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "facility-fw.json"; path = "../../../../../Downloads/facility-fw.json"; sourceTree = "<group>"; };
+		0FBCE4F6299F5B90001F6001 /* facility-fw.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "facility-fw.json"; sourceTree = "<group>"; };
+		0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +80,14 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
+				0FBCE4F5299F5B84001F6001 /* JSON */,
 				0FBCE4EE299F351F001F6001 /* SignIn-System */,
 				0FBCE4D8299F2FD5001F6001 /* Signup-System */,
 				0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */,
 				0FBCE4C3299F27FB001F6001 /* ContentView.swift */,
+				0FBCE4F3299F580D001F6001 /* facility-fw.json */,
 				0FBCE4C5299F27FC001F6001 /* Assets.xcassets */,
-				0FBCE4CA299F27FC001F6001 /* Persistence.swift */,
 				0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */,
-				0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */,
 				0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */,
 				0FBCE4C7299F27FC001F6001 /* Preview Content */,
 			);
@@ -117,6 +118,15 @@
 				0FBCE4F1299F35D0001F6001 /* LoginModel.swift */,
 			);
 			name = "SignIn-System";
+			sourceTree = "<group>";
+		};
+		0FBCE4F5299F5B84001F6001 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCE4F6299F5B90001F6001 /* facility-fw.json */,
+				0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +201,7 @@
 				0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */,
 				0FBCE4C6299F27FC001F6001 /* Assets.xcassets in Resources */,
 				0FBCE4E0299F316E001F6001 /* GoogleService-Info.plist in Resources */,
+				0FBCE4F4299F580D001F6001 /* facility-fw.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,12 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBCE4CB299F27FC001F6001 /* Persistence.swift in Sources */,
 				0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */,
+				0FBCE4F8299F5BB9001F6001 /* JSONManager.swift in Sources */,
 				0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */,
 				0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */,
 				0FBCE4F2299F35D0001F6001 /* LoginModel.swift in Sources */,
-				0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */,
 				0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */,
 				0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */,
 				0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */,
@@ -456,16 +466,6 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0FBCE4CD299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodel */,
-			);
-			currentVersion = 0FBCE4CD299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodel */;
-			path = Fitness_walking_tracks.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

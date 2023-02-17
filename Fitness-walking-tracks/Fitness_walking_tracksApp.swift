@@ -10,7 +10,7 @@ import Firebase
 
 @main
 struct Fitness_walking_tracksApp: App {
-    let persistenceController = PersistenceController.shared
+    //let persistenceController = PersistenceController.shared
     
     init() {
         FirebaseApp.configure()
@@ -18,7 +18,7 @@ struct Fitness_walking_tracksApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                //.environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
