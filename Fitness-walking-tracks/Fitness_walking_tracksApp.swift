@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Fitness_walking_tracksApp: App {
     let persistenceController = PersistenceController.shared
-
+    
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -23,6 +23,8 @@
 		0FBCE4E9299F3256001F6001 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E8299F3256001F6001 /* FirebaseFirestore */; };
 		0FBCE4EB299F3256001F6001 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EA299F3256001F6001 /* FirebaseFirestoreSwift */; };
 		0FBCE4ED299F3256001F6001 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EC299F3256001F6001 /* FirebaseStorage */; };
+		0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4EF299F3586001F6001 /* SignInView.swift */; };
+		0FBCE4F2299F35D0001F6001 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F1299F35D0001F6001 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		0FBCE4DB299F3025001F6001 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		0FBCE4DD299F306A001F6001 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/SignUp/SignUpModel.swift"; sourceTree = "<group>"; };
 		0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FBCE4EF299F3586001F6001 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0FBCE4F1299F35D0001F6001 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/login/LoginModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
+				0FBCE4EE299F351F001F6001 /* SignIn-System */,
 				0FBCE4D8299F2FD5001F6001 /* Signup-System */,
 				0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */,
 				0FBCE4C3299F27FB001F6001 /* ContentView.swift */,
@@ -103,6 +108,15 @@
 				0FBCE4DB299F3025001F6001 /* SignUpView.swift */,
 			);
 			name = "Signup-System";
+			sourceTree = "<group>";
+		};
+		0FBCE4EE299F351F001F6001 /* SignIn-System */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCE4EF299F3586001F6001 /* SignInView.swift */,
+				0FBCE4F1299F35D0001F6001 /* LoginModel.swift */,
+			);
+			name = "SignIn-System";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,8 +205,10 @@
 				0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */,
 				0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */,
 				0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */,
+				0FBCE4F2299F35D0001F6001 /* LoginModel.swift in Sources */,
 				0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */,
 				0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */,
+				0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */,
 				0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
