@@ -13,6 +13,7 @@
 		0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */; };
 		0FBCE4CB299F27FC001F6001 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4CA299F27FC001F6001 /* Persistence.swift */; };
 		0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */; };
+		0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FBCE4CA299F27FC001F6001 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0FBCE4CD299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fitness_walking_tracks.xcdatamodel; sourceTree = "<group>"; };
+		0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = facility.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0FBCE4C5299F27FC001F6001 /* Assets.xcassets */,
 				0FBCE4CA299F27FC001F6001 /* Persistence.swift */,
 				0FBCE4CC299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld */,
+				0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */,
 				0FBCE4C7299F27FC001F6001 /* Preview Content */,
 			);
 			path = "Fitness-walking-tracks";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBCE4CB299F27FC001F6001 /* Persistence.swift in Sources */,
+				0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */,
 				0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */,
 				0FBCE4CE299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodeld in Sources */,
 				0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */,
@@ -356,6 +360,16 @@
 			);
 			currentVersion = 0FBCE4CD299F27FC001F6001 /* Fitness_walking_tracks.xcdatamodel */;
 			path = Fitness_walking_tracks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */,
+			);
+			currentVersion = 0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */;
+			path = facility.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
