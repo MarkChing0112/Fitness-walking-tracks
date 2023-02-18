@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F15E5BF29A0D78300110D5A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F15E5BE29A0D78300110D5A /* LoginModel.swift */; };
 		0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */; };
 		0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C3299F27FB001F6001 /* ContentView.swift */; };
 		0FBCE4C6299F27FC001F6001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C5299F27FC001F6001 /* Assets.xcassets */; };
 		0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */; };
 		0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */; };
 		0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DB299F3025001F6001 /* SignUpView.swift */; };
-		0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DD299F306A001F6001 /* SignUpModel.swift */; };
 		0FBCE4E0299F316E001F6001 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */; };
 		0FBCE4E3299F3256001F6001 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E2299F3256001F6001 /* FirebaseAuth */; };
 		0FBCE4E5299F3256001F6001 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E4299F3256001F6001 /* FirebaseDatabase */; };
@@ -22,12 +22,13 @@
 		0FBCE4EB299F3256001F6001 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EA299F3256001F6001 /* FirebaseFirestoreSwift */; };
 		0FBCE4ED299F3256001F6001 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4EC299F3256001F6001 /* FirebaseStorage */; };
 		0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4EF299F3586001F6001 /* SignInView.swift */; };
-		0FBCE4F2299F35D0001F6001 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F1299F35D0001F6001 /* LoginModel.swift */; };
 		0FBCE4F8299F5BB9001F6001 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */; };
 		0FBCE4FB299F70CE001F6001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4FA299F70CE001F6001 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F15E5BC29A0D75600110D5A /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		0F15E5BE29A0D78300110D5A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		0FBCE4BE299F27FB001F6001 /* Fitness-walking-tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness-walking-tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_walking_tracksApp.swift; sourceTree = "<group>"; };
 		0FBCE4C3299F27FB001F6001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,10 +36,8 @@
 		0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = facility.xcdatamodel; sourceTree = "<group>"; };
 		0FBCE4DB299F3025001F6001 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		0FBCE4DD299F306A001F6001 /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/SignUp/SignUpModel.swift"; sourceTree = "<group>"; };
 		0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FBCE4EF299F3586001F6001 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		0FBCE4F1299F35D0001F6001 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = "../../../Side-Project/未命名/Fruit_Scanner/login/LoginModel.swift"; sourceTree = "<group>"; };
 		0FBCE4F6299F5B90001F6001 /* facility-fw.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "facility-fw.json"; sourceTree = "<group>"; };
 		0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		0FBCE4FA299F70CE001F6001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -61,6 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F15E5BB29A0D74B00110D5A /* Signup-System */ = {
+			isa = PBXGroup;
+			children = (
+				0FBCE4DB299F3025001F6001 /* SignUpView.swift */,
+				0F15E5BC29A0D75600110D5A /* SignUpModel.swift */,
+			);
+			name = "Signup-System";
+			sourceTree = "<group>";
+		};
+		0F15E5BD29A0D76200110D5A /* Signin-System */ = {
+			isa = PBXGroup;
+			children = (
+				0F15E5BE29A0D78300110D5A /* LoginModel.swift */,
+				0FBCE4EF299F3586001F6001 /* SignInView.swift */,
+			);
+			name = "Signin-System";
+			sourceTree = "<group>";
+		};
 		0FBCE4B5299F27FB001F6001 = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +97,10 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
+				0F15E5BD29A0D76200110D5A /* Signin-System */,
+				0F15E5BB29A0D74B00110D5A /* Signup-System */,
 				0FBCE4F9299F70B8001F6001 /* Views */,
 				0FBCE4F5299F5B84001F6001 /* JSON */,
-				0FBCE4EE299F351F001F6001 /* SignIn-System */,
-				0FBCE4D8299F2FD5001F6001 /* Signup-System */,
 				0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */,
 				0FBCE4C3299F27FB001F6001 /* ContentView.swift */,
 				0FBCE4C5299F27FC001F6001 /* Assets.xcassets */,
@@ -100,24 +117,6 @@
 				0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		0FBCE4D8299F2FD5001F6001 /* Signup-System */ = {
-			isa = PBXGroup;
-			children = (
-				0FBCE4DD299F306A001F6001 /* SignUpModel.swift */,
-				0FBCE4DB299F3025001F6001 /* SignUpView.swift */,
-			);
-			name = "Signup-System";
-			sourceTree = "<group>";
-		};
-		0FBCE4EE299F351F001F6001 /* SignIn-System */ = {
-			isa = PBXGroup;
-			children = (
-				0FBCE4EF299F3586001F6001 /* SignInView.swift */,
-				0FBCE4F1299F35D0001F6001 /* LoginModel.swift */,
-			);
-			name = "SignIn-System";
 			sourceTree = "<group>";
 		};
 		0FBCE4F5299F5B84001F6001 /* JSON */ = {
@@ -220,11 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBCE4FB299F70CE001F6001 /* HomeView.swift in Sources */,
-				0FBCE4DE299F306A001F6001 /* SignUpModel.swift in Sources */,
 				0FBCE4F8299F5BB9001F6001 /* JSONManager.swift in Sources */,
 				0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */,
 				0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */,
-				0FBCE4F2299F35D0001F6001 /* LoginModel.swift in Sources */,
+				0F15E5BF29A0D78300110D5A /* LoginModel.swift in Sources */,
 				0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */,
 				0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */,
 				0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */,
