@@ -101,9 +101,9 @@ struct SignUpView: View {
                                             toSignInView = true
                                         }
                                     }
-                                    NavigationLink(isActive: $toSignInView, destination: { SignInView() }, label: {
-                                        EmptyView()
-                                    })
+//                                    NavigationLink(isActive: $toSignInView, destination: { SignInView() }, label: {
+//                                        EmptyView()
+//                                    })
         }
             .padding(.top,-maxCircleHeight / 1.5)
             .frame(maxHeight: .infinity, alignment:  .top)

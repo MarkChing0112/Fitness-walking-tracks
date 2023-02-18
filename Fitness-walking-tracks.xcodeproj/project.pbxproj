@@ -25,6 +25,7 @@
 		0FBCE4FB299F70CE001F6001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4FA299F70CE001F6001 /* HomeView.swift */; };
 		39C9768629A0D8F6001912DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39C9768529A0D8F6001912DF /* GoogleService-Info.plist */; };
 		39C9768829A0DAFC001912DF /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9768729A0DAFC001912DF /* SignUpModel.swift */; };
+		39C9768D29A10252001912DF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9768C29A10252001912DF /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0FBCE4FA299F70CE001F6001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		39C9768529A0D8F6001912DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39C9768729A0DAFC001912DF /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		39C9768C29A10252001912DF /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
+				39C9768929A10138001912DF /* ItemRow */,
 				39C9768529A0D8F6001912DF /* GoogleService-Info.plist */,
 				0F15E5BD29A0D76200110D5A /* Signin-System */,
 				0F15E5BB29A0D74B00110D5A /* Signup-System */,
@@ -135,6 +138,14 @@
 				0FBCE4FA299F70CE001F6001 /* HomeView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		39C9768929A10138001912DF /* ItemRow */ = {
+			isa = PBXGroup;
+			children = (
+				39C9768C29A10252001912DF /* ItemRow.swift */,
+			);
+			path = ItemRow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +237,7 @@
 				0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */,
 				0F15E5BF29A0D78300110D5A /* LoginModel.swift in Sources */,
 				0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */,
+				39C9768D29A10252001912DF /* ItemRow.swift in Sources */,
 				0FBCE4F0299F3586001F6001 /* SignInView.swift in Sources */,
 				0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */,
 			);
