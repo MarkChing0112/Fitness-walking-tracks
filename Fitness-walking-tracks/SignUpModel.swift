@@ -1,3 +1,10 @@
+//
+//  SignUpModel.swift
+//  Fitness-walking-tracks
+//
+//  Created by Holung Cheng on 18/2/2023.
+//
+
 import SwiftUI
 import Firebase
 import FirebaseAuth
