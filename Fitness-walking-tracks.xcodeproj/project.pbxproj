@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0F15E5BF29A0D78300110D5A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F15E5BE29A0D78300110D5A /* LoginModel.swift */; };
+		0F15E5C129A0D82E00110D5A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F15E5C029A0D82E00110D5A /* GoogleService-Info.plist */; };
 		0FBCE4C2299F27FB001F6001 /* Fitness_walking_tracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */; };
 		0FBCE4C4299F27FB001F6001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C3299F27FB001F6001 /* ContentView.swift */; };
 		0FBCE4C6299F27FC001F6001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C5299F27FC001F6001 /* Assets.xcassets */; };
 		0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */; };
 		0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */; };
 		0FBCE4DC299F3025001F6001 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DB299F3025001F6001 /* SignUpView.swift */; };
-		0FBCE4E0299F316E001F6001 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */; };
 		0FBCE4E3299F3256001F6001 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E2299F3256001F6001 /* FirebaseAuth */; };
 		0FBCE4E5299F3256001F6001 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E4299F3256001F6001 /* FirebaseDatabase */; };
 		0FBCE4E7299F3256001F6001 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0FBCE4E6299F3256001F6001 /* FirebaseDatabaseSwift */; };
@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		0F15E5BC29A0D75600110D5A /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		0F15E5BE29A0D78300110D5A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		0F15E5C029A0D82E00110D5A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FBCE4BE299F27FB001F6001 /* Fitness-walking-tracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness-walking-tracks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_walking_tracksApp.swift; sourceTree = "<group>"; };
 		0FBCE4C3299F27FB001F6001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		0FBCE4C8299F27FC001F6001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FBCE4D5299F2DD6001F6001 /* facility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = facility.xcdatamodel; sourceTree = "<group>"; };
 		0FBCE4DB299F3025001F6001 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FBCE4EF299F3586001F6001 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0FBCE4F6299F5B90001F6001 /* facility-fw.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "facility-fw.json"; sourceTree = "<group>"; };
 		0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
@@ -97,13 +97,13 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
-				0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */,
 				0F15E5BD29A0D76200110D5A /* Signin-System */,
 				0F15E5BB29A0D74B00110D5A /* Signup-System */,
 				0FBCE4F9299F70B8001F6001 /* Views */,
 				0FBCE4F5299F5B84001F6001 /* JSON */,
 				0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */,
 				0FBCE4C3299F27FB001F6001 /* ContentView.swift */,
+				0F15E5C029A0D82E00110D5A /* GoogleService-Info.plist */,
 				0FBCE4C5299F27FC001F6001 /* Assets.xcassets */,
 				0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */,
 				0FBCE4C7299F27FC001F6001 /* Preview Content */,
@@ -207,7 +207,7 @@
 			files = (
 				0FBCE4C9299F27FC001F6001 /* Preview Assets.xcassets in Resources */,
 				0FBCE4C6299F27FC001F6001 /* Assets.xcassets in Resources */,
-				0FBCE4E0299F316E001F6001 /* GoogleService-Info.plist in Resources */,
+				0F15E5C129A0D82E00110D5A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
