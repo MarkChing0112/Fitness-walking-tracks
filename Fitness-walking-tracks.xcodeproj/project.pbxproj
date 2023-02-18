@@ -97,6 +97,7 @@
 		0FBCE4C0299F27FB001F6001 /* Fitness-walking-tracks */ = {
 			isa = PBXGroup;
 			children = (
+				0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */,
 				0F15E5BD29A0D76200110D5A /* Signin-System */,
 				0F15E5BB29A0D74B00110D5A /* Signup-System */,
 				0FBCE4F9299F70B8001F6001 /* Views */,
@@ -104,7 +105,6 @@
 				0FBCE4C1299F27FB001F6001 /* Fitness_walking_tracksApp.swift */,
 				0FBCE4C3299F27FB001F6001 /* ContentView.swift */,
 				0FBCE4C5299F27FC001F6001 /* Assets.xcassets */,
-				0FBCE4DF299F316E001F6001 /* GoogleService-Info.plist */,
 				0FBCE4D4299F2DD6001F6001 /* facility.xcdatamodeld */,
 				0FBCE4C7299F27FC001F6001 /* Preview Content */,
 			);
