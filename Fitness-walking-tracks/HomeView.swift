@@ -44,6 +44,7 @@ struct HomeView: View {
                     .padding(.horizontal,25)
                     .shadow(color: .black, radius: 10)
                     .background(Color(.systemGray3))
+
                     .cornerRadius(8)
                     .padding(.horizontal,10)
                     .onTapGesture {
