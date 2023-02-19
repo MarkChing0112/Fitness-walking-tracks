@@ -20,14 +20,20 @@ struct HomeView: View {
         VStack(){
           
             HStack(){
+                
                 Text("Fitness Walking Tracks")
+                    .padding(10)
                     .fontWeight(.bold)
                     .font(.title)
 //                    Image(systemName: "gear").resizable().aspectRatio( contentMode: .fit).frame(width: 50,height: 50)
                 Spacer()
                 
                 Button(action:{},label: {
-                    Image(systemName: "gear").resizable().aspectRatio( contentMode: .fit).frame(width: 50,height: 50)
+                    Image(systemName: "rectangle.portrait.and.arrow.forward")
+                        .resizable()
+                        .aspectRatio( contentMode: .fit)
+                        .frame(width: 40,height: 40)
+                        .padding(10)
                 })
                 
             }
@@ -58,13 +64,17 @@ struct HomeView: View {
             
                 HStack{
                     Text("推薦路線")
+                        .padding(10)
                         .fontWeight(.bold)
                         .foregroundColor(.red)
                         .frame(maxWidth: .infinity,alignment: .leading)
                 }
             HStack{
                 Button(action:{},label: {
-                    Image(systemName: "gear").resizable().aspectRatio( contentMode: .fit).frame(width: 200,height: 200)
+                    Image(systemName: "gear")
+                        .resizable()
+                        .aspectRatio( contentMode: .fit)
+                        .frame(width: 200,height: 200)
                 })
             
             }
