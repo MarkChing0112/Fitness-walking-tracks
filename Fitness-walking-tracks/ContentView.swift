@@ -19,8 +19,8 @@ struct ContentView: View {
             if logStatus{
                 HomeView(text:.constant("")).navigationBarBackButtonHidden(false)
             }else {
-                HomeView(text:.constant("")).navigationBarBackButtonHidden(false)
-//                SignInView().navigationBarBackButtonHidden(true)
+                //HomeView(text:.constant("")).navigationBarBackButtonHidden(false)
+                SignInView().navigationBarBackButtonHidden(true)
             }
         }
         .edgesIgnoringSafeArea(.all)

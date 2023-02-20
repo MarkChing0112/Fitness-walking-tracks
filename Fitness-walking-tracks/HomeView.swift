@@ -25,19 +25,24 @@ struct HomeView: View {
                     .padding(10)
                     .fontWeight(.bold)
                     .font(.title)
-//                    Image(systemName: "gear").resizable().aspectRatio( contentMode: .fit).frame(width: 50,height: 50)
+                //                    Image(systemName: "gear").resizable().aspectRatio( contentMode: .fit).frame(width: 50,height: 50)
                 Spacer()
-                
-                Button(action:{},label: {
-                    Image(systemName: "rectangle.portrait.and.arrow.forward")
-                        .resizable()
-                        .aspectRatio( contentMode: .fit)
-                        .frame(width: 40,height: 40)
-                        .padding(10)
-                })
+                if logStatus{
+                    Button(action:{
+                        try? Auth.auth().signOut()
+                        logStatus = false},label: {
+                        Image(systemName: "rectangle.portrait.and.arrow.forward")
+                            .resizable()
+                            .aspectRatio( contentMode: .fit)
+                            .frame(width: 40,height: 40)
+                            .padding(10)
+                    })
+                    
+                }else{
+                    Text("Came as Guset")
+                }
                 
             }
-           
             HStack{
                 TextField("Search...",text: $text)
                     .padding(7)
