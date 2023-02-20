@@ -12,11 +12,10 @@ struct ItemRow: View {
     
     var body: some View{
         HStack{
-            Image(systemName: "rectangle.portrait.and.arrow.forward")
+            Image("testimg")
                 .resizable()
-                .aspectRatio( contentMode: .fit)
-                .frame(width: 40,height: 40)
-                .padding(10)
+                .frame(width: 50,height: 70)
+
             
             VStack(alignment: .leading ){
                 Text("hello")
@@ -26,7 +25,9 @@ struct ItemRow: View {
                 Text("ddd")
                     .foregroundColor(.gray)
             }
+            Spacer()
         }
+        
     }
 }
 
