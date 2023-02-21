@@ -72,7 +72,7 @@ struct HomeView: View {
                     Text("推薦路線")
                         .padding(10)
                         .fontWeight(.bold)
-                        .foregroundColor(.red)
+                        .foregroundColor(.blue)
                         .frame(maxWidth: .infinity,alignment: .leading)
                 }
             HStack{
@@ -84,6 +84,14 @@ struct HomeView: View {
                 })
             
             }
+            HStack{
+                Text("全部路線")
+                    .padding(10)
+                    .fontWeight(.bold)
+                    .foregroundColor(.blue)
+                    .frame(maxWidth: .infinity,alignment: .leading)
+            }
+
             
 //            NavigationStack{
 //                List{

@@ -6,15 +6,17 @@
 //
 
 import Foundation
-
+import SwiftUI
 // MARK: - FacilityElement
-struct FacilityElement: Codable {
+struct FacilityElement:Hashable , Codable {
     let titleEn, titleTc, titleSc, districtEn: String
     let districtTc, districtSc, routeEn, routeTc: String
     let routeSc, howToAccessEn, howToAccessTc, howToAccessSc: String
     let mapURLEn, mapURLTc, mapURLSc: String
     let latitude: Double
     let longitude: Double
+    
+    
 
     enum CodingKeys: String, CodingKey {
         case titleEn = "Title_en"
