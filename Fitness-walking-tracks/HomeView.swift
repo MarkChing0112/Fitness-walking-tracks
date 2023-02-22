@@ -1,14 +1,11 @@
-//
-//  HomeView.swift
-//  Fitness-walking-tracks
-//
-//  Created by Man Ho Ching on 17/2/2023.
-//
 
 import SwiftUI
 import Firebase
 
 struct HomeView: View {
+    
+    private var FW: [FacilityElement] = FacilityElement.fWalking
+    
     // Log Status
     @AppStorage("log_status") var logStatus: Bool = false
     @Binding var text:String
@@ -16,7 +13,7 @@ struct HomeView: View {
     
 //    let item = Bundle.main.decode([FacilityElement].self, from:"facillity-fw.json")
     var body: some View {
-        
+        //init()
         VStack(){
           
             HStack(){
@@ -90,6 +87,19 @@ struct HomeView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
                     .frame(maxWidth: .infinity,alignment: .leading)
+                
+                NavigationView {
+                    List{
+                        ForEach(FW, id: \.titleEn) { facility in
+                            NavigationLink("", destination: DetailView(Fw: facility))
+                            VStack(alignment: .leading) {
+                                Text("\(facility.titleEn)")
+                            }
+                            
+                            //Text("\(facility.titleEn)")
+                        }
+                    }
+                }
             }
 
             
@@ -130,6 +140,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(text:.constant(""))
+        HomeView()
     }
 }
