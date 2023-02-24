@@ -13,7 +13,8 @@ struct DetailView: View {
     
     var body: some View {
         VStack() {
-            Text("\(Fw.titleEn) \(Fw.districtEn)").bold()
+            Text("\(Fw.titleEn) \(Fw.districtEn)")
+                .bold()
         }
     }
 }
