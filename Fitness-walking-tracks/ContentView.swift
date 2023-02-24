@@ -17,7 +17,7 @@ struct ContentView: View {
 
         NavigationView {
             if logStatus{
-                HomeView(text:.constant("")).navigationBarBackButtonHidden(false)
+                HomeView().navigationBarBackButtonHidden(false)
             }else {
                 //HomeView(text:.constant("")).navigationBarBackButtonHidden(false)
                 SignInView().navigationBarBackButtonHidden(true)

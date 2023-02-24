@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 // MARK: - FacilityElement
 struct FacilityElement:Hashable , Codable {
+    let id: Int
     let titleEn, titleTc, titleSc, districtEn: String
     let districtTc, districtSc, routeEn, routeTc: String
     let routeSc, howToAccessEn, howToAccessTc, howToAccessSc: String
@@ -16,10 +17,11 @@ struct FacilityElement:Hashable , Codable {
     let latitude: Double
     let longitude: Double
     
-    static let fWalking: [FacilityElement] = Bundle.main.decode(file: "facility-fw.json")
+    static let fWalking: [FacilityElement] = Bundle.main.decode(file: "facility.json")
     static let sfw: FacilityElement = fWalking[0]
     
     enum CodingKeys: String, CodingKey {
+        case id = "id"
         case titleEn = "Title_en"
         case titleTc = "Title_tc"
         case titleSc = "Title_sc"
