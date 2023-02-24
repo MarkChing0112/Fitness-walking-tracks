@@ -80,26 +80,29 @@ struct HomeView: View {
                 })
             
             }
-            HStack{
+            VStack{
                 Text("全部路線")
                     .padding(10)
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
                     .frame(maxWidth: .infinity,alignment: .leading)
                 
-                NavigationView {
-                    List{
-                        ForEach(FW, id: \.titleEn) { facility in
-                            NavigationLink("", destination: DetailView(Fw: facility))
-                            VStack(alignment: .leading) {
-                                Text("\(facility.titleEn)")
-                            }
+                List {
+                    ForEach(FW, id: \.titleEn) { facility in
+                        NavigationLink("\(facility.titleEn)", destination: DetailView(Fw: facility)
                             
-                            //Text("\(facility.titleEn)")
-                        }
+                        )
                     }
                 }
             }
+//            HStack{
+//                    List {
+//                        ForEach(FW, id: \.titleEn) { facility in
+//                            NavigationLink("\(facility.titleEn)", destination: DetailView(Fw: facility))
+//                        }
+//                    }
+//                }
+            
 
             
 //            NavigationStack{

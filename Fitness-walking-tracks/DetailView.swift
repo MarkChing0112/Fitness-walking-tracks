@@ -12,7 +12,7 @@ struct DetailView: View {
     var Fw: FacilityElement
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack() {
             Text("\(Fw.titleEn) \(Fw.districtEn)").bold()
         }
     }
