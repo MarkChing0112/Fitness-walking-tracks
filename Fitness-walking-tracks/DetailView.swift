@@ -15,6 +15,7 @@ struct DetailView: View {
         VStack() {
             Text("\(Fw.titleEn) \(Fw.districtEn)")
                 .bold()
+            AsyncImage(url: URL(string: "\(Fw.mapURLEn)"))
         }
     }
 }
