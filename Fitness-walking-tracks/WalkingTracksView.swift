@@ -12,7 +12,7 @@ struct WalkingTracksView: View {
         VStack {
                    MapView()
                        .ignoresSafeArea(edges: .top)
-                       .frame(height: 300)
+                       .frame(height: 400)
 
                    CircleImage()
                        .offset(y: -130)
