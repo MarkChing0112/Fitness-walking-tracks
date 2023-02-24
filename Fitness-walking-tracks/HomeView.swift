@@ -81,8 +81,8 @@ struct HomeView: View {
                         Text("\(facility.titleEn)")
                         }
                     }
-                }.frame(width: 440)
-            
+                }.scaleEffect(x: 1.2 ,y: 1.029, anchor:.bottom)
+                    
             }
         }
         
