@@ -42,7 +42,7 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity,alignment: .leading)
                 
                 List {
-                    ForEach(FW, id: \.titleEn) { facility in
+                    ForEach(FW, id: \.id) { facility in
                         NavigationLink{
                             DetailView(Fw: facility)
                         }label: {

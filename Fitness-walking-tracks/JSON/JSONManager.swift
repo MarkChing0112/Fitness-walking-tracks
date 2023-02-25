@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 // MARK: - FacilityElement
-struct FacilityElement:Hashable , Codable {
+struct FacilityElement:Hashable , Codable, Identifiable {
     let id: Int
     let titleEn, titleTc, titleSc, districtEn: String
     let districtTc, districtSc, routeEn, routeTc: String
@@ -42,7 +42,7 @@ struct FacilityElement:Hashable , Codable {
     }
 }
 
-enum Latitude: Codable {
+enum Latitudes: Codable {
     case double(Double)
     case string(String)
 
@@ -56,7 +56,7 @@ enum Latitude: Codable {
             self = .string(x)
             return
         }
-        throw DecodingError.typeMismatch(Latitude.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Latitude"))
+        throw DecodingError.typeMismatch(Latitudes.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Latitude"))
     }
 
     func encode(to encoder: Encoder) throws {

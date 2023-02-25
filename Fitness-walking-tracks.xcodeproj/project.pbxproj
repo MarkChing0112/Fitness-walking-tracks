@@ -25,6 +25,7 @@
 		0FBCE4FB299F70CE001F6001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBCE4FA299F70CE001F6001 /* HomeView.swift */; };
 		0FF4D03429A89A1100D3DA03 /* facility.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FF4D03329A87A9500D3DA03 /* facility.json */; };
 		0FF4D03529A89A1400D3DA03 /* facilitys.json in Resources */ = {isa = PBXBuildFile; fileRef = 0FBCE4F6299F5B90001F6001 /* facilitys.json */; };
+		0FF6720F29AA0B3700A93A7B /* LocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF6720E29AA0B3700A93A7B /* LocationManger.swift */; };
 		39C9768629A0D8F6001912DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39C9768529A0D8F6001912DF /* GoogleService-Info.plist */; };
 		39C9768829A0DAFC001912DF /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9768729A0DAFC001912DF /* SignUpModel.swift */; };
 		39C9768D29A10252001912DF /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C9768C29A10252001912DF /* ItemRow.swift */; };
@@ -49,6 +50,7 @@
 		0FBCE4F7299F5BB9001F6001 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		0FBCE4FA299F70CE001F6001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0FF4D03329A87A9500D3DA03 /* facility.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = facility.json; path = ../facility.json; sourceTree = "<group>"; };
+		0FF6720E29AA0B3700A93A7B /* LocationManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManger.swift; sourceTree = "<group>"; };
 		39C9768529A0D8F6001912DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39C9768729A0DAFC001912DF /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		39C9768C29A10252001912DF /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		0FBCE4F9299F70B8001F6001 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0FF6720E29AA0B3700A93A7B /* LocationManger.swift */,
 				0FBCE4FA299F70CE001F6001 /* HomeView.swift */,
 				39C9769729A1B78C001912DF /* WalkingTracksView.swift */,
 				5D72E34329A67E930014A0F2 /* DetailView.swift */,
@@ -261,6 +264,7 @@
 			files = (
 				0FBCE4FB299F70CE001F6001 /* HomeView.swift in Sources */,
 				0FBCE4F8299F5BB9001F6001 /* JSONManager.swift in Sources */,
+				0FF6720F29AA0B3700A93A7B /* LocationManger.swift in Sources */,
 				0FBCE4D6299F2DD6001F6001 /* facility.xcdatamodeld in Sources */,
 				39C9769229A1B286001912DF /* MapView.swift in Sources */,
 				39C9768829A0DAFC001912DF /* SignUpModel.swift in Sources */,
@@ -405,6 +409,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness-walking-tracks/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow Access to location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -434,6 +440,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness-walking-tracks/Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow Access to location?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
