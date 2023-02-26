@@ -39,12 +39,24 @@ struct DetailView: View {
             }.frame(width: 200.0, height: 200.0)
             
             VStack(alignment: .center){
-                Text("\(Fw.titleEn) \(Fw.districtEn)")
-                    .bold()
+                Text("\(Fw.titleEn)")
+                    .font(.title)
+                HStack {
+                    Spacer()
+                    Text("\(Fw.districtEn)")
+                }
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                    Divider()
+
+                Text("Information")
+                        .font(.title2)
                 Text("\(Fw.routeEn)")
+                Text("\(Fw.howToAccessEn)")
 
             }.padding()
             Spacer()
+            
         }.onAppear{self.setRegion(CLLocationCoordinate2D(latitude: Fw.latitude, longitude: Fw.longitude))}
         
     }
