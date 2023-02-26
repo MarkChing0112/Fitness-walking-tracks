@@ -21,7 +21,8 @@ struct DetailView: View {
             
             Map(coordinateRegion: $region, annotationItems: [Fw]){
                 Fws in MapMarker(coordinate: CLLocationCoordinate2D(latitude: Fws.latitude, longitude: Fws.longitude))
-            }
+            }.ignoresSafeArea(edges: .top)
+            .frame(height: 250)
 
             
             AsyncImage(url: URL(string: "\(Fw.mapURLEn)")){
@@ -50,7 +51,7 @@ struct DetailView: View {
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
             region = MKCoordinateRegion(
                 center: coordinate,
-                span: MKCoordinateSpan(latitudeDelta: 0.4, longitudeDelta: 0.4)
+                span: MKCoordinateSpan(latitudeDelta: 0.009, longitudeDelta: 0.008 )
             )
         }
 }
