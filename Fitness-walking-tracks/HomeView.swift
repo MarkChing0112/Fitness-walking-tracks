@@ -5,14 +5,22 @@ import Firebase
 struct HomeView: View {
     @State var searchQuery = ""
     private var FW: [FacilityElement] = FacilityElement.fWalking
+    @State private var filteredFacility: [FacilityElement] = FacilityElement.fWalking
     
     // Log Status
     @AppStorage("log_status") var logStatus: Bool = false
-
     
-
+    private func performSearch(keyword: String){
+        filteredFacility = FW.filter{ Fw in
+            Fw.titleEn.contains(keyword)
+        }
+    }
+    
+    private var facilitys: [FacilityElement] {
+        filteredFacility.isEmpty ? FW: filteredFacility
+    }
     var body: some View {
-        //init()
+        
         VStack(){
 
             HStack{
@@ -42,7 +50,7 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity,alignment: .leading)
                 
                 List {
-                    ForEach(FW, id: \.id) { facility in
+                    ForEach(facilitys, id: \.id) { facility in
                         NavigationLink{
                             DetailView(Fw: facility)
                         }label: {
@@ -57,15 +65,20 @@ struct HomeView: View {
                     }
                 }.scaleEffect(x: 1.2 ,y: 1.029, anchor:.bottom)
                     .searchable(text: $searchQuery)
-                    //                .navigationTitle("Fitness Walking Tracks")
+                    .onChange(of: searchQuery, perform: performSearch)
+                    .task {
+                        do{
+                            try await FW
+                        } catch {
+                            print(error)
+                        }
+                    }
                     .navigationBarItems( leading:
                                             HStack{Image("runningIcon")
                             .resizable()
                             .frame(width: 40,height: 40)
-                        Text("Fitness Walking Tracks")
-                        //                    .padding(10)
+                    Text("Fitness Walking Tracks")
                             .fontWeight(.bold)
-                        //                        .font(.title)
                             .font(.system(size: 20))
                     }
                                          ,trailing: HStack{if logStatus{
