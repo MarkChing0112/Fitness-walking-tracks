@@ -18,48 +18,60 @@ struct DetailView: View {
     var body: some View {
 
         VStack() {
-            
             Map(coordinateRegion: $region, annotationItems: [Fw]){
                 Fws in MapMarker(coordinate: CLLocationCoordinate2D(latitude: Fws.latitude, longitude: Fws.longitude))
             }.ignoresSafeArea(edges: .top)
             .frame(height: 250)
 
-            
             AsyncImage(url: URL(string: "\(Fw.mapURLEn)")){
                 Image in Image
                     .resizable()
                     .clipShape(Circle())
                     .overlay{
                         Circle().stroke(.white, lineWidth: 4)
-                    }.offset(y: -160)
-                    .padding(.bottom, -130)
+                    }
+                    .offset(y: -130)
+                    .padding(.bottom, -140)
                     .shadow(radius: 7)
                     .scaledToFit()
-            }placeholder: {
-            }.frame(width: 200.0, height: 200.0)
+            }
+            placeholder: {
+            }
+//            .frame(width: 200.0, height: 200.0)
             
-            VStack(alignment: .center){
+            VStack(){
                 Text("\(Fw.titleEn)")
                     .font(.title)
+                    .frame(maxWidth: .infinity, alignment: .center)
                 HStack {
                     Spacer()
                     Text("\(Fw.districtEn)")
+                        .frame(maxWidth: .infinity, alignment: .center)
                 }
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    Divider()
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                Divider()
 
+           
                 Text("Information")
-                        .font(.title2)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 Text("\(Fw.routeEn)")
+                    .font(.system(size: 13))
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 Text("\(Fw.howToAccessEn)")
+                    .lineLimit(2...)
+                    .font(.system(size: 13))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                
+
 
             }.padding()
             Spacer()
             
         }.onAppear{self.setRegion(CLLocationCoordinate2D(latitude: Fw.latitude, longitude: Fw.longitude))}
-        
+       
     }
+    
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
             region = MKCoordinateRegion(
                 center: coordinate,
