@@ -4,7 +4,9 @@ import Firebase
 
 struct HomeView: View {
     @State var searchQuery = ""
-    private var FW: [FacilityElement] = FacilityElement.fWalking
+    @State private var FW: [FacilityElement] = FacilityElement.fWalking
+    @State var tonext = false
+    
     @State private var filteredFacility: [FacilityElement] = FacilityElement.fWalking
     
     // Log Status
@@ -32,14 +34,22 @@ struct HomeView: View {
                 }
             
             HStack{
-                Button(action:{},label: {
-                    AsyncImage(url: URL(string: "\(FW[1].mapURLEn)")){
-                        Image in Image
-                            .resizable()
-                    }placeholder: {
-                    }.frame(width: 400,height: 200)
-
+                NavigationLink(destination:  DetailView(Fw: FW[8]),isActive: $tonext, label: {
+                    Button(action:{
+                        tonext = true
+                    },label: {
+                        AsyncImage(url: URL(string: "\(FW[8].mapURLEn)")){
+                            Image in Image
+                                .resizable()
+                            
+                            
+                        }placeholder: {
+                            
+                        }.frame(width: 400,height: 200)
+                        
+                    })
                 })
+   
             }
             
             VStack{
@@ -66,13 +76,6 @@ struct HomeView: View {
                 }.scaleEffect(x: 1.2 ,y: 1.029, anchor:.bottom)
                     .searchable(text: $searchQuery)
                     .onChange(of: searchQuery, perform: performSearch)
-                    .task {
-                        do{
-                            try await FW
-                        } catch {
-                            print(error)
-                        }
-                    }
                     .navigationBarItems( leading:
                                             HStack{Image("runningIcon")
                             .resizable()
@@ -102,7 +105,6 @@ struct HomeView: View {
         }
         
     }
-
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
