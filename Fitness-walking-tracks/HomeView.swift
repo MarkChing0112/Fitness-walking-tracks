@@ -8,7 +8,7 @@ struct HomeView: View {
     @State var tonext = false
     
     @State private var filteredFacility: [FacilityElement] = FacilityElement.fWalking
-    
+    let randomInt = Int.random(in: 1..<30)
     // Log Status
     @AppStorage("log_status") var logStatus: Bool = false
     
@@ -34,11 +34,11 @@ struct HomeView: View {
                 }
             
             HStack{
-                NavigationLink(destination:  DetailView(Fw: FW[8]),isActive: $tonext, label: {
+                NavigationLink(destination:  DetailView(Fw: FW[randomInt]),isActive: $tonext, label: {
                     Button(action:{
                         tonext = true
                     },label: {
-                        AsyncImage(url: URL(string: "\(FW[8].mapURLEn)")){
+                        AsyncImage(url: URL(string: "\(FW[randomInt].mapURLEn)")){
                             Image in Image
                                 .resizable()
                             
