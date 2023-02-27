@@ -54,13 +54,17 @@ struct DetailView: View {
 
            
                 Text("Information")
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.title2)
                 Text("\(Fw.routeEn)")
-                    .font(.system(size: 13))
+                    .fixedSize(horizontal: false, vertical: true)
+                    .font(.system(size: 15))
                     .frame(maxWidth: .infinity, alignment: .leading)
+                Text("How To Go")
+                    .font(.title2)
                 Text("\(Fw.howToAccessEn)")
-                    .lineLimit(2...)
-                    .font(.system(size: 13))
+                    .fixedSize(horizontal: false, vertical: true)
+                   
+                    .font(.system(size: 15))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
 
