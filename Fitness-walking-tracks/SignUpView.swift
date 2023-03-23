@@ -19,6 +19,29 @@ struct SignUpView: View {
         @State var useFaceID: Bool = false
         @State private var toSignInView = false
         @State var maxCircleHeight: CGFloat = 0
+        @State var passwordStrength : Int = 0
+        
+    func checkStrength(_ password: String) -> Int {
+        let passwordLength = signUpModel.password.count
+        var containsSymbol = false
+        var containsUppercase = false
+        
+        for character in password {
+            if "ABCDEFGHIJKLMNOPQRSTUVWXYZ".contains(character) {
+                containsUppercase = true
+            }
+            
+            if "!£$%&/()=?^;:_ç°§*,.-_".contains(character) {
+                containsSymbol = true
+            }
+        }
+        
+        if passwordLength > 8 && containsSymbol && containsUppercase {
+            return 1
+        } else {
+            return 0
+        }
+    }
         
         var body: some View {
             
@@ -71,6 +94,7 @@ struct SignUpView: View {
                     .textInputAutocapitalization(.never)
                     .padding(.top, 20)
                 
+                
                 TextField("Password", text: $signUpModel.password)
                     .padding()
                     .background {
@@ -80,9 +104,21 @@ struct SignUpView: View {
                         
                     }
                     .textInputAutocapitalization(.never)
-                    .padding(.top, 20)
-                
+                    .padding(.top,20)
+                VStack {
+                    Text("- one upper character")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.gray)
+                    Text("- one symbol")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.gray)
+                    Text("- at least 8 character")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.gray)
+                }
+                                
                 Button {
+                    
                     signUpModel.createAccount()
                     signUpModel.showError.toggle()
                     
@@ -94,7 +130,9 @@ struct SignUpView: View {
                         .background {
                             RoundedRectangle(cornerRadius: 8).fill(Color(.brown))
                         }
-                }.disabled(signUpModel.email == "" || signUpModel.password == "" )
+                }
+                .disabled(checkStrength(signUpModel.password) == 0)
+                //.disabled(signUpModel.email == "" || signUpModel.password == "" )
                 .padding(.vertical, 35)
                 .alert(signUpModel.errorMsg, isPresented: $signUpModel.showError){
                     Button("ok!") {
