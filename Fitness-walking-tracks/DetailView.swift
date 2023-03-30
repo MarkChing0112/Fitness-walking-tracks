@@ -9,8 +9,11 @@ import SwiftUI
 import MapKit
 
 struct DetailView: View {
-    
+  
     var Fw: FacilityElement
+    let routeTc = Locale(identifier: "routeTc")
+    let routeSc = Locale(identifier: "routesSc")
+    
     
     @State private var region = MKCoordinateRegion()
     

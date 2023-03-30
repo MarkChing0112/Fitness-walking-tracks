@@ -26,11 +26,33 @@ struct HomeView: View {
         VStack(){
 
             HStack{
-                    Text("推薦路線")
+                    Text("Suggested Path")
                         .padding(10)
                         .fontWeight(.bold)
                         .foregroundColor(.blue)
                         .frame(maxWidth: .infinity,alignment: .leading)
+                    Button {
+                            } label: {
+                            Text("EN")
+                                .padding()
+                                .disabled(true)
+                                    }
+                    Button {
+
+                    } label: {
+                      Text("繁中")
+                        .padding()
+                       
+                    }
+                    Button {
+
+                    } label: {
+                      Text("簡中")
+                        .padding(10)
+                    }
+                   
+                   
+                     // 3
                 }
             
             HStack{
@@ -53,7 +75,7 @@ struct HomeView: View {
             }
             
             VStack{
-                Text("全部路線")
+                Text("All Routes")
                     .padding(10)
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
