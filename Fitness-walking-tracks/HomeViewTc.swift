@@ -2,7 +2,7 @@
 import SwiftUI
 import Firebase
 
-struct HomeView: View {
+struct HomeViewTc: View {
     @State var searchQuery = ""
     @State private var FW: [FacilityElement] = FacilityElement.fWalking
     @State var tonext = false
@@ -14,7 +14,7 @@ struct HomeView: View {
     
     private func performSearch(keyword: String){
         filteredFacility = FW.filter{ Fw in
-            Fw.titleEn.contains(keyword)
+            Fw.titleTc.contains(keyword)
         }
     }
     
@@ -26,25 +26,27 @@ struct HomeView: View {
         VStack(){
 
             HStack{
-                    Text("Suggested Path")
+                    Text("建議路線")
                         .padding(10)
                         .fontWeight(.bold)
                         .foregroundColor(.blue)
                         .frame(maxWidth: .infinity,alignment: .leading)
                 
-                NavigationLink("EN", destination: HomeViewSc().navigationBarBackButtonHidden(true)).padding().disabled(true)
-                NavigationLink("繁", destination: HomeViewTc().navigationBarBackButtonHidden(true))
-                NavigationLink("简", destination: HomeViewSc().navigationBarBackButtonHidden(true)).padding()
-                        
-
+            NavigationLink("EN", destination: HomeView().navigationBarBackButtonHidden(true)).padding()
+            NavigationLink("繁", destination: HomeViewTc().navigationBarBackButtonHidden(true)).disabled(true)
+            
+            NavigationLink("简", destination: HomeViewSc().navigationBarBackButtonHidden(true)).padding()
+                   
+                   
+                     // 3
                 }
             
             HStack{
-                NavigationLink(destination:  DetailView(Fw: FW[randomInt]),isActive: $tonext, label: {
+                NavigationLink(destination:  DetailViewTc(Fw: FW[randomInt]),isActive: $tonext, label: {
                     Button(action:{
                         tonext = true
                     },label: {
-                        AsyncImage(url: URL(string: "\(FW[randomInt].mapURLEn)")){
+                        AsyncImage(url: URL(string: "\(FW[randomInt].mapURLTc)")){
                             Image in Image
                                 .resizable()
                             
@@ -59,7 +61,7 @@ struct HomeView: View {
             }
             
             VStack{
-                Text("All Routes")
+                Text("所有路線")
                     .padding(10)
                     .fontWeight(.bold)
                     .foregroundColor(.blue)
@@ -68,15 +70,15 @@ struct HomeView: View {
                 List {
                     ForEach(facilitys, id: \.id) { facility in
                         NavigationLink{
-                            DetailView(Fw: facility)
+                            DetailViewTc(Fw: facility)
                         }label: {
                             
-                            AsyncImage(url: URL(string: "\(facility.mapURLEn)")){
+                            AsyncImage(url: URL(string: "\(facility.mapURLTc)")){
                                 Image in Image
                                     .resizable()
                             }placeholder: {
                             }.frame(width: 90,height: 90)
-                        Text("\(facility.titleEn)")
+                        Text("\(facility.titleTc)")
                         }
                     }
                 }.scaleEffect(x: 1.2 ,y: 1.029, anchor:.bottom)
@@ -112,8 +114,8 @@ struct HomeView: View {
         
     }
 
-struct HomeView_Previews: PreviewProvider {
+struct HomeViewTc_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeViewTc()
     }
 }
