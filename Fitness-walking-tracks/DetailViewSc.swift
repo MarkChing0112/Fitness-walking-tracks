@@ -56,13 +56,13 @@ struct DetailViewSc: View {
                 Divider()
 
            
-                Text("Information")
+                Text("资讯")
                     .font(.title2)
                 Text("\(Fw.routeSc)")
                     .fixedSize(horizontal: false, vertical: true)
                     .font(.system(size: 15))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("How To Go")
+                Text("如何去")
                     .font(.title2)
                 Text("\(Fw.howToAccessSc)")
                     .fixedSize(horizontal: false, vertical: true)
