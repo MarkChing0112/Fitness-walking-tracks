@@ -29,6 +29,7 @@ struct DetailViewTc: View {
             AsyncImage(url: URL(string: "\(Fw.mapURLTc)")){
                 Image in Image
                     .resizable()
+                    .frame(width:200, height: 200)
                     .clipShape(Circle())
                     .overlay{
                         Circle().stroke(.white, lineWidth: 4)
