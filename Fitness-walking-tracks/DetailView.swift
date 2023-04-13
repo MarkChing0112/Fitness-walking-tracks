@@ -28,7 +28,9 @@ struct DetailView: View {
 
             AsyncImage(url: URL(string: "\(Fw.mapURLEn)")){
                 Image in Image
+                  
                     .resizable()
+                    .frame(width:200, height: 200)
                     .clipShape(Circle())
                     .overlay{
                         Circle().stroke(.white, lineWidth: 4)
@@ -37,6 +39,8 @@ struct DetailView: View {
                     .padding(.bottom, -140)
                     .shadow(radius: 7)
                     .scaledToFit()
+                  
+                  
             }
             placeholder: {
             }
